@@ -1,0 +1,62 @@
+<popup #popup5 (confirmClick)="login()">
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmai3" class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-7">
+        <input type="text" class="form-control" name="email" [(ngModel)]="email" id="email" placeholder="email">
+        </div>
+    </div>
+     <div class="form-group">
+        <label for="inputEmai3" class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-7">
+        <input type="password" class="form-control" name="password" [(ngModel)]="password" id="password" placeholder="password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-group text-right">
+            <div class="col-sm-offset-3 col-sm-7">
+            <div class="checkbox">
+                <label>
+                <input type="checkbox" id="RequireLogin" name="RequireLogin"> Remember Me
+                </label>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+</popup>
+
+ <button class="btn btn-primary" (click)="showLogin()">Login</button>
+<!-- <div class = "row" id= "loginForm">
+<button (click)="ClickButton()">test</button>
+    <div class="col-md-12">
+
+    <form >
+        <div>
+            <label>Who are you??
+            <select #type >
+                <option  *ngFor="let sel of selections" >{{sel.name}}</option>
+            </select>
+            </label>
+        </div>
+      
+        <div>
+         <label>What is your user Name
+        <input formControlName="email" type="email" placeholder="Your email">
+         </label>
+        </div>
+        <div>
+        <label> Enter your secret password here
+        <input formControlName="password" type="password" placeholder="Your password">
+        </label>
+        </div>
+
+        <div>
+            <button type="submit">Log in</button>
+        </div>
+    </form>
+    </div>
+</div> -->

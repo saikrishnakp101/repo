@@ -1,0 +1,49 @@
+<div class= "contact">
+    <table  *ngFor="let contact of contacts">
+        <tr>
+        <td>
+                Contact Picture : 
+            </td>
+
+            <td>
+               <img src={{contact.contactProfilePic}} height="120" width="120">
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                Contact Name : 
+            </td>
+
+            <td>
+                {{contact.contactName}}
+            </td>
+        </tr>
+
+          <tr>
+
+            <td>
+                Contact email : 
+            </td>
+
+            <td>
+                {{contact.contactEmail}}
+            </td>
+        </tr>
+
+         <tr>
+
+            <td>
+                Contact phone : 
+            </td>
+
+            <td>
+                {{contact.contactPhone}}
+            </td>
+        </tr>
+        <hr>
+       
+       
+    </table>
+</div>
